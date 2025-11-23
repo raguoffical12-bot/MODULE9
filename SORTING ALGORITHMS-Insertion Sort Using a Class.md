@@ -1,42 +1,39 @@
-# 🧮 SORTING ALGORITHMS: Insertion Sort Using a Class
+### EX: 9.4 find the square root of all elements in a list using list comprehension.     
+### Aim: Write a Python program to calculate the square root of all elements in a given list using list comprehension.
 
-This program demonstrates how to implement the **Insertion Sort algorithm** using a Python class. It allows the user to input a list of numbers, sorts them using the insertion sort technique, and displays the sorted list.
 
----
+### Algorithm:
 
-## 🎯 Aim
+Start
+Read the number of elements 
+Initialize an empty list to store the input numbers.
+For 𝑖=1i=1 to 𝑛 n:
+Read the number and append it to the list.
+Use list comprehension with the math.sqrt() function to calculate the square root of each element in the list.
+Print the original list.
+Print the list of square roots.
+End
 
-To develop a Python class with functions to:
-- Create a list of integers
-- Sort it using the **Insertion Sort** algorithm
-- Display the sorted list
+### Program:
+```
+reg no:212223070021
+name:Ragunandhan S
+n=int(input())
+l=[]
+for i in range(n):
+    x=float(input())
+    l.append(x)
+sq_l=[item**0.5 for item in l]
+print(l)
+print(sq_l)
 
----
+```
+### Output:
+![image](https://github.com/user-attachments/assets/ab25c3bf-1a04-43cb-be5e-c3cb149fa06a)
 
-## 🧠 Algorithm
 
-1. **Start the program**
-2. **Define a class** `InsertionSorter`
-3. Inside the class:
-   - `create_list()`:
-     - Read number of elements
-     - Store them in a list
-   - `insertion_sort()`:
-     - Iterate from the second element to the end
-     - Move elements greater than the key to one position ahead
-     - Insert the key at the correct position
-   - `print_list()`:
-     - Print the sorted list
-4. **Create an object** of the class
-5. **Call** the methods in order: `create_list()`, `insertion_sort()`, and `print_list()`
-6. **End the program**
+### Result: Thus, the given program is implemented and executed successfully.
+ 
 
----
+ 
 
-## 💻 PROGRAM:
-
-ADD CODE HERE
-
-## OUTPUT:
-
-## RESULT:
