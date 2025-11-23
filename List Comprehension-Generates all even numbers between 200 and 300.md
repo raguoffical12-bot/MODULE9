@@ -1,27 +1,52 @@
-# 🧾 List Comprehension:Generates all even numbers between 200 and 300
-## 🎯 AIM:
-To write a Python class-based program that generates all even numbers between 200 and 300 using **list comprehension**, and stores them in a list.
+# 19CS301Module-9
+### EX: 9.1                                            MATRIX OPERATIONS
+### Aim: To Write a Python Program to subtract two matrices by reading the matrix from the user.
+### Algorithm:
 
----
+STEP 1: Start.
 
-## 🧠 ALGORITHM:
+STEP 2: Create a variable r and c for rows and columns of the matrix.
 
-1. **Start**
-2. Create a class named `program`
-3. Create variables `a`, `b`, and `c` to represent:
-   - `a`: Lower limit
-   - `b`: Step value
-   - `c`: Upper limit
-4. Initialize the values using a constructor `__init__`
-5. Define a method `display()` that uses **list comprehension** to store even numbers
-6. Print the resulting list of even numbers
-7. **Stop**
+STEP 3: Get the value of r and c from user.
 
----
+STEP 4: Define a function to create a matrix.
 
-## 💻 PROGRAM:
-Add Code Here
+STEP 5 : Define another function to subtract the matrices.
 
-## OUTPUT:
+STEP 6: Print the result.
 
-## RESULT:
+STEP 7 : Stop.
+### Program:
+```
+reg no:212223070021
+name:Ragunandhan S
+def create_matrix(n,m):
+         M = []
+         for i in range(n):
+                   row = []
+                   for j in range(m):
+                      x = int(input())
+                       row.append(x)
+           M.append(row)
+         return M
+r,c = input().split()
+A = create_matrix(int(r),int(c))
+B = create_matrix(int(r),int(c))
+C = []
+for i in range(int(r)):
+         R = []
+ 
+
+        for j in range(int(c)):
+                item = A[i][j]-B[i][j]
+   R.append(item)
+C.append(R)
+print(A)
+print(B)
+print(C)
+```
+### Output:
+![image](https://github.com/user-attachments/assets/715e58a2-ac73-4948-b611-c7ed1a20d74e)
+
+
+### Result: Thus, the given program is implemented and executed successfully .
