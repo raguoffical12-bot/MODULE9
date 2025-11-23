@@ -1,25 +1,43 @@
-# Matrix Operations-Diagonal Matrix Elements Printer 🧮
+### EX: 9.3 ADVANCED LIST PROCESSING
+### Aim: To Write a Python program to Find the transpose of a matrix using list Comprehension.
 
-This Python program reads a matrix of any size from the user and prints **only the diagonal elements**, leaving other elements blank in the output.
+### Algorithm:
 
-## 📌 Aim
+STEP 1: Start.
 
-To write a Python program that prints only the diagonal elements of a given matrix.
+STEP 2: Create a variable r and c for rows and columns. 
 
-## 🧠 Algorithm
+STEP 3: Get the value of r and c from user.
 
-1. Read the number of rows and columns from the user.
-2. Initialize an empty matrix of size `rows × columns`.
-3. Populate the matrix with user input.
-4. Display the full matrix.
-5. Iterate through the matrix and:
-   - If `i == j`, print the element (main diagonal).
-   - Else, print a blank space.
-6. Print a newline after each row.
+STEP 4: Define a function to create the matrix.
 
-## 🖥️ Program
-Add Code Here
+STEP 5 : Using list comprehension find the transpose of the matrix.
 
+STEP 6: Print the result.
+
+STEP 7 : Stop.
+
+### Program:
+```
+reg no:212223070021
+name:Ragunandhan S
+def create(r,c):
+            M=[]
+        for i in range(int(r)):
+             R = []
+        for j in range(int(c)):
+             x = int(input())
+             R.append(x)
+           M.append(R)
+ return M
+r,c = input().split()
+matrix = create(int(r),int(c))
+print(matrix)
+T = [[r[i]for r in matrix]for i in range(len(matrix[0]))]
+ print(T)
+```
 ### Output:
+![image](https://github.com/user-attachments/assets/4f9b1d3d-84d8-4a05-8ffe-28c11a1283e5)
 
-## Result
+
+### Result: Thus, the given program is implemented and executed successfully .
